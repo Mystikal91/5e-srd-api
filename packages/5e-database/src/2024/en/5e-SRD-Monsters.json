@@ -9072,7 +9072,7 @@
       },
       {
         "name": "Mind Jolt",
-        "desc": "The dragon uses Spellcasting to cast Mind Spike (level 4 version). The dragon can’t take this action again until the start of its next turn."
+        "desc": "The dragon uses Spellcasting to cast Mind Spike (level 5 version). The dragon can’t take this action again until the start of its next turn."
       },
       {
         "name": "Spike (level 5 version)",
@@ -15461,7 +15461,7 @@
     "legendary_actions": [
       {
         "name": "Banish",
-        "desc": "Charisma Saving Throw: DC 21, one creature the dragon can see within 120 feet. Failure: 10 (3d6) Force damage, and the target has the Incapacitated condition and is transported to a harmless demiplane until the start of the dragon’s next turn, at which point it re appears in an unoccupied space of the dragon’s choice within 120 feet of the dragon. Failure or Success: The dragon can’t take this action again until the start of its next turn.",
+        "desc": "Charisma Saving Throw: DC 21, one creature the dragon can see within 120 feet. Failure: 10 (3d6) Force damage, and the target has the Incapacitated condition and is transported to a harmless demiplane until the start of the dragon’s next turn, at which point it reappears in an unoccupied space of the dragon’s choice within 120 feet of the dragon. Failure or Success: The dragon can’t take this action again until the start of its next turn.",
         "damage": [
           {
             "damage_type": {
@@ -45827,6 +45827,101 @@
     ],
     "proficiency_bonus": 2,
     "xp": 25
+  },
+  {
+    "name": "Octopus",
+    "size": "Small",
+    "type": "beast",
+    "alignment": "unaligned",
+    "armor_class": [
+      {
+        "value": 12
+      }
+    ],
+    "hit_points": 3,
+    "hit_dice": "1d6",
+    "speed": {
+      "walk": "5 ft.",
+      "swim": "30 ft."
+    },
+    "strength": 4,
+    "dexterity": 15,
+    "constitution": 11,
+    "intelligence": 3,
+    "wisdom": 10,
+    "charisma": 4,
+    "damage_resistances": [],
+    "damage_vulnerabilities": [],
+    "damage_immunities": [],
+    "condition_immunities": [],
+    "senses": {
+      "darkvision": "30 ft.",
+      "passive_perception": 12
+    },
+    "languages": "None",
+    "challenge_rating": 0,
+    "special_abilities": [
+      {
+        "name": "Compression",
+        "desc": "The octopus can move through a space as narrow as 1 inch without expending extra movement to do so."
+      },
+      {
+        "name": "Water Breathing",
+        "desc": "The octopus can breathe only underwater."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Tentacles",
+        "desc": "Melee Attack Roll: +4, reach 5 ft. Hit: 1 Bludgeoning damage.",
+        "damage": [
+          {
+            "damage_type": {
+              "index": "bludgeoning",
+              "name": "Bludgeoning",
+              "url": "/api/2024/damage-types/bludgeoning"
+            },
+            "damage_dice": "1"
+          }
+        ],
+        "attack_bonus": 4
+      }
+    ],
+    "reactions": [
+      {
+        "name": "Ink Cloud",
+        "desc": "Trigger: A creature ends its turn within 5 feet of the octopus while underwater. Response: The octopus releases ink that fills a 5-foot Cube centered on itself, and the octopus moves up to its Swim Speed. The Cube is Heavily Obscured for 1 minute or until a strong current or similar effect disperses the ink.",
+        "usage": {
+          "type": "per day",
+          "times": 1
+        }
+      }
+    ],
+    "legendary_actions": [],
+    "index": "octopus",
+    "url": "/api/2024/monsters/octopus",
+    "image": "/api/images/monsters/octopus.png",
+    "hit_points_roll": "1d6",
+    "proficiencies": [
+      {
+        "value": 2,
+        "proficiency": {
+          "index": "skill-perception",
+          "name": "Skill: Perception",
+          "url": "/api/2024/proficiencies/skill-perception"
+        }
+      },
+      {
+        "value": 6,
+        "proficiency": {
+          "index": "skill-stealth",
+          "name": "Skill: Stealth",
+          "url": "/api/2024/proficiencies/skill-stealth"
+        }
+      }
+    ],
+    "proficiency_bonus": 2,
+    "xp": 10
   },
   {
     "name": "Owl",
